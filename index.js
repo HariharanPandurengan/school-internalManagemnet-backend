@@ -7,6 +7,8 @@ const nodemailer = require('nodemailer');
 
 const app = express()
 app.use(cors());
+
+
 app.use(express.json())
 
 mongoose.connect('mongodb://localhost:27017/hathy');
@@ -1263,6 +1265,6 @@ const comparePassword = async (password, hashedPassword) => {
             }
         });
 
-app.listen(3001, () => {
+app.listen(3002, () => {
     console.log("server is running")
 })
